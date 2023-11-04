@@ -1,0 +1,311 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header { 
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 69px;
+  padding: 0 100px;
+}
+
+.logo { 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.paw {
+  width: 170px;
+}
+
+.social-media { 
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.welcome { 
+  background: url(/img/Grupo\ 486@2x.png) no-repeat center;
+  height: 150vh;
+  width: 100%;
+  padding: 10% 30%;
+}
+
+.welcome h2 { 
+  font-size: 4rem;
+  color: #fff;
+  width: 530px;
+  margin: 0 0 30px;
+}
+
+.welcome, img { 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intersection { 
+  background: url(/img/Interseção\ 16@2x.png) no-repeat top right / cover;
+  height: 150vh;
+  width: 100%;
+  padding: 10%;
+  color: #3A342F;
+}
+
+.intersection h3 {
+  font-size: 3.5em;
+  text-align: start;
+  margin-bottom: 14px;
+}
+
+.intersection p { 
+  font-size: 2em;
+  width: 430px;
+  margin-right: auto;
+  text-align: start;
+}
+
+.intersection button { 
+  font-size: 2em;
+  margin-top: 45px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #3A342F;
+  color: #fff;
+  border: none;
+  width: 248px;
+  max-width: 430px;
+}
+
+.group {
+  background: url(/img/Grupo\ 480@2x.png) no-repeat top left / cover;
+  height: 150vh;
+  width: 100%;
+  color: #fff;
+  padding-top: 15%;
+  padding-left: 60%;
+}
+
+.group h3 { 
+  font-size: 3.5em;
+  width: 430px;
+  margin: 0 0 14px;
+
+}
+
+.group p { 
+  font-size: 2em;
+  width: 430px;
+}
+
+.group button { 
+  font-size: 2em;
+  margin: 45px 0 0 ;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  width: 248px;
+  max-width: 430px;
+}
+
+.apoio {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 112px;
+}
+
+.apoio li { 
+  font-size: 2rem;
+  color: #FD6A9A;
+}
+
+.rodape { 
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  list-style: none;
+  gap: 100px;
+  background-color: #EB4A7B;
+  color: #fff;
+  padding-left: 100px;
+  height: 314px;
+}
+
+.rodape .title { 
+ font-size: 2em;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+.rodape ul { 
+  list-style: none;
+}
+
+.rodape li { 
+  line-height: 2em;
+}
+
+.mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) { 
+ 
+  header { 
+    padding: 0 45px;
+  }
+
+  .social-media .instagram, .social-media .youtube  {
+    display: none;
+  }
+
+  .welcome {
+    background: url(/img/Grupo\ 485@2x.png) no-repeat center;
+    background-size: cover; 
+    height: 100vh; 
+    padding: 0;
+  }
+
+  .welcome h2 { 
+    font-size: 2.5rem;
+    padding: 20% 0 10% 8%;
+    width: 350px;
+    margin: 0;
+  }
+
+  .intersection { 
+    background: url(/img/Grupo\ 484@2x.png) no-repeat center;
+    background-size: cover; 
+    height: 100vh; 
+    padding: 10% 3%;
+  }
+
+  .intersection h3 {
+    font-size: 2.5em;
+    margin-bottom: 0px;
+  }
+
+  .intersection p { 
+    font-size: 1.8em;
+    width: 350px;
+    margin-top: 14px;
+  }
+
+  .intersection button { 
+    font-size: 2em;
+    margin-top: 35px;
+    border-radius: 30px;
+    padding: 10px;
+    width: 250px;
+  }
+
+  .group {
+    background: url(/img/Grupo\ 496@2x.png) no-repeat center;
+    background-size: cover; 
+    height: 100vh; 
+    padding: 10% 3%;
+  }
+
+  .group h3 { 
+    font-size: 2.5em;
+    width: 350px;
+
+  }
+
+  .group p { 
+    font-size: 1.8em;
+    width: 350px;
+  }
+
+  .group button { 
+    margin-top: 35px;
+  }
+
+  .apoio {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 112px;
+  }
+
+  #apoio {
+    display: none;
+  }
+
+  .apoio li  { 
+    font-size: 2rem;
+    color: #FD6A9A;
+  }
+  section em  { 
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    color: #FD6A9A;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rodape { 
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    height: auto; 
+    text-align: center;
+  }
+
+  .rodape .title { 
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+
+  .rodape ul { 
+    list-style: none;
+  }
+
+  .rodape li { 
+    line-height: 2em;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #redes {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .rodape .paw {
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+
